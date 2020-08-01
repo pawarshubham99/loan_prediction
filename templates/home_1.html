@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{{ url_for('upload')}}" method="POST" enctype = "multipart/form-data">
+
+		<input type="text" name="City" placeholder="city" required="required" />
+        	<input type="text" name="State" placeholder="state" required="required" />
+		<input type="text" name="Bank" placeholder="bank" required="required" />
+        	<input type="text" name="BankState" placeholder="bankstate" required="required" />
+        	<input type="text" name="NewExist" placeholder="newexist 1 = Existing 2 = New" required="required" />
+                <input type="text" name="FranchiseCode" placeholder="francisecode FC =0 NFC=1" required="required" />
+                <input type="text" name="UrbanRural" placeholder="1= Urban 2= Rural" required="required" />
+                <input type="text" name="RevLineCr" placeholder="revlinecr Y = Yes N=No" required="required" />
+                <input type="text" name="LowDoc" placeholder="lowdoc Y = Yes N = No" required="required" />
+                <input type="text" name="Term" placeholder="term" required="required" />
+                <input type="text" name="NoEmp" placeholder="noemp" required="required" />
+                <input type="text" name="CreateJob" placeholder="createdjob" required="required" />
+                <input type="text" name="RetainedJob" placeholder="retainedjob" required="required" />
+                <input type="text" name="GrAppv" placeholder="gross_app" required="required" />
+                <input type="text" name="SBA_Appv" placeholder="sba_app" required="required" />
+
+
+		<button type="submit" class="btn btn-primary btn-block btn-large">submit</button>
+</form>
+{{shape}}
+
+<form action="{{ url_for('predict')}}" method="POST">
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+</form>
+
+</body>
+</html>
