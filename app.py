@@ -1,7 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 
-from sklearn.externals import joblib
+import joblib
 import pandas as pd
 from flask import Flask, request, render_template
 
