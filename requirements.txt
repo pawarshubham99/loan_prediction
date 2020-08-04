@@ -24,8 +24,6 @@ certifi==2019.11.28
 cffi==1.14.0
 chardet==3.0.4
 Click==7.0
-conda>=4.8.3
-conda-build>=3.18.11
 conda-verify>=3.4.2
 configparser>=5.0.0
 contextlib2>=0.6.0.post1
