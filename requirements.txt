@@ -29,7 +29,6 @@ colorama==0.4.3
 comtypes==1.1.7
 conda==4.3.16
 conda-build==2.1.5
-conda-package-handling==1.7.0
 conda-verify==3.4.2
 configparser==5.0.0
 contextlib2==0.6.0.post1
