@@ -4,17 +4,16 @@ from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import joblib
 
-#model = joblib.load('model.pkl')
 app = Flask(__name__)
 #model = pickle.load(open('model.pkl', 'rb'))
 model = joblib.load('model.joblib')
-df = None
+
 @app.route("/")
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
         global df
-            
+        df = None
         import pandas as pd
         df = pd.DataFrame(columns =['Term', 'NoEmp','CreateJob', 'RetainedJob','GrAppv','SBA_Appv',
                            'City', 'State', 'Bank', 'BankState', 'NewExist','FranchiseCode', 'UrbanRural', 'RevLineCr','LowDoc'])
