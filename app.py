@@ -3,11 +3,11 @@ from flask import Flask, request, jsonify, render_template
 
 import pandas as pd
 import joblib
-#model = joblib.load('model.joblib')
+
 #model = joblib.load('model.pkl')
 app = Flask(__name__)
 #model = pickle.load(open('model.pkl', 'rb'))
-
+model = joblib.load('model.joblib')
 df = None
 @app.route("/")
 @app.route('/upload', methods=['GET', 'POST'])
